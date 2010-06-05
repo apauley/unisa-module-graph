@@ -36,12 +36,10 @@ digraph ComputationalIntelligence {
     COS2213 -> {COS112V COS113W}
     COS2213 -> {COS211X} [label=CoRequirement]
     COS2338 -> {COS111U MAT103N MAT1511 MAT1512}
-    MAT212S
+    MAT103OR151 [label="Requires\none of...", style=dashed];
+    MAT212S -> {MAT103OR151}
+    MAT103OR151 -> {MAT103N MAT1511}
     LIN309F -> {LIN101W} [style=dashed]
     LIN2024 -> {LIN101W} [style=dashed]
     PLS207B -> {PYC101Y}
-
-
-    MAT103N -> {MAT212S} [label=Provides]
-    MAT1512 -> {MAT212S} [label=Provides]
 }
