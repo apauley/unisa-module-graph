@@ -55,7 +55,7 @@ digraph ComputationalIntelligence {
 
     {rank=same; COS2213 COS211X}
     COS2213 -> {COS112V COS113W}
-    COS2213 -> {COS211X} [label=CoRequirement]
+    COS2213 -> {COS211X}
     COS2338 -> {COS111U MAT103N MAT1511 MAT1512}
     MAT103OR151 [label="Requires\none of...", style=dashed];
     MAT212S -> {MAT103OR151}
