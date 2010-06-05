@@ -15,6 +15,13 @@ digraph ComputationalIntelligence {
     LIN2024 [shape=ellipse];
     PLS207B [shape=ellipse];
 
+    COS3114 [shape=ellipse];
+    APM3711 [shape=ellipse];
+    MAT307Y [shape=ellipse];
+    INF303D [shape=ellipse];
+    LIN3028 [shape=ellipse];
+    COS340A [shape=ellipse];
+
     {rank=same; COS301Y INF320E COS351D PLS3708}
     {rank=same; COS3114 APM3711 MAT307Y COS340A}
     {rank=same; INF303D LIN3028 PYC303B}
