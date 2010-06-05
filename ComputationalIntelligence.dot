@@ -2,6 +2,12 @@ digraph ComputationalIntelligence {
     node [shape=box];
     rankdir=LR;
 
+    // Optional modules are ellipse-shaped
+    INF1511 [shape=ellipse];
+    MAT103N [shape=ellipse];
+    DSC1510 [shape=ellipse];
+    LIN101W [shape=ellipse];
+
     {rank=same; COS301Y INF320E COS351D PLS3708}
     {rank=same; COS3114 APM3711 MAT307Y COS340A}
     {rank=same; INF303D LIN3028 PYC303B}
