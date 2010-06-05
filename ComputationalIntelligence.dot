@@ -2,12 +2,6 @@ digraph ComputationalIntelligence {
     node [shape=box];
     rankdir=LR;
 
-    // Optional modules are ellipse-shaped
-    {node [shape=ellipse];
-    INF1511 MAT103N DSC1510 LIN101W
-    COS2213 COS2338 MAT212S LIN309F LIN2024 PLS207B
-    COS3114 APM3711 MAT307Y INF303D LIN3028 COS340A}
-
     // Completed modules
     {node [style=filled];
     COS111U COS112V COS113W MAT1511 MAT1512 COS101S
@@ -15,15 +9,18 @@ digraph ComputationalIntelligence {
     COS211X COS261C COS2144 COS3114}
 
     {rank=same; COS301Y INF320E COS351D COS361F PYC303B}
-    {rank=same; COS3114 APM3711 MAT307Y INF303D LIN3028 COS340A}
+    {rank=same; node [shape=ellipse];
+    COS3114 APM3711 MAT307Y INF303D LIN3028 COS340A}
 
     {rank=same; COS201V COS211X COS261C COS2144}
-    {rank=same; COS2213 COS2338 MAT212S LIN309F LIN2024 PLS207B}
+    {rank=same; node [shape=ellipse];
+    COS2213 COS2338 MAT212S LIN309F LIN2024 PLS207B}
 
     {rank=same; COS101S COS112V COS113W INF1208 MAT1511 MAT1512
                 PYC101Y COS111U CSS101H STA1510 EUP1501}
 
-    {rank=same; INF1511 MAT103N DSC1510 LIN101W}
+    {rank=same; node [shape=ellipse];
+    INF1511 MAT103N DSC1510 LIN101W}
 
     COS301Y -> {COS201V}
     INF320E -> {INF1208 INF1511}
