@@ -2,13 +2,19 @@ digraph ComputationalIntelligence {
     node [shape=box];
     rankdir=LR;
 
-    {rank=same; COS301Y INF320E COS351D COS361F PYC303B}
-    {rank=same; node [shape=ellipse];
-    COS3114 [style=filled]
-    MAT307Y COS340A
-    APM3711 [style=dotted]
-    INF303D [style=dotted]
-    LIN3028 [style=dotted]}
+    subgraph cluster3 {
+        label = "Third-level modules";
+
+        {rank=same;
+        COS301Y INF320E COS351D COS361F PYC303B}
+
+        {rank=same; node [shape=ellipse];
+        COS3114 [style=filled]
+        MAT307Y COS340A
+        APM3711 [style=dotted]
+        INF303D [style=dotted]
+        LIN3028 [style=dotted]}
+    }
 
     {rank=same;
     COS201V
@@ -19,16 +25,22 @@ digraph ComputationalIntelligence {
     LIN309F [style=dotted]
     LIN2024 [style=dotted]}
 
-    {rank=same;
+    MAT103OR151 [label="Requires\none of...", style=dashed];
+
+    subgraph cluster1 {
+        label = "First-level modules";
+
+        {rank=same;
         {node [style=filled];
               COS101S COS112V COS113W INF1208 MAT1511 MAT1512
               PYC101Y COS111U STA1510}
         CSS101H EUP1501}
 
-    {rank=same; node [shape=ellipse];
-        INF1511 [style=dotted]
-        {node [style=filled];
-              MAT103N DSC1510 LIN101W}}
+        {rank=same; node [shape=ellipse];
+            INF1511 [style=dotted]
+            {node [style=filled];
+                MAT103N DSC1510 LIN101W}}
+    }
 
     COS301Y -> {COS201V}
     INF320E -> {INF1208 INF1511}
@@ -53,7 +65,6 @@ digraph ComputationalIntelligence {
     COS2213 -> {COS112V COS113W}
     COS2213 -> {COS211X}
     COS2338 -> {COS111U MAT103N MAT1511 MAT1512}
-    MAT103OR151 [label="Requires\none of...", style=dashed];
     MAT212S -> {MAT103OR151}
     MAT103OR151 -> {MAT103N MAT1511}
     LIN309F -> {LIN101W} [style=dashed]
