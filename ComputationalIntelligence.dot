@@ -5,14 +5,19 @@ digraph ComputationalIntelligence {
     {rank=same; COS301Y INF320E COS351D COS361F PYC303B}
     {rank=same; node [shape=ellipse];
     COS3114 [style=filled]
-    APM3711 MAT307Y INF303D LIN3028 COS340A}
+    MAT307Y COS340A
+    APM3711 [style=dotted]
+    INF303D [style=dotted]
+    LIN3028 [style=dotted]}
 
     {rank=same;
     COS201V
     {node [style=filled]; COS211X COS261C COS2144}}
 
     {rank=same; node [shape=ellipse];
-    COS2213 COS2338 MAT212S LIN309F LIN2024 PLS207B}
+    COS2213 COS2338 MAT212S PLS207B
+    LIN309F [style=dotted]
+    LIN2024 [style=dotted]}
 
     {rank=same;
         {node [style=filled];
