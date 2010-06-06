@@ -2,25 +2,23 @@ digraph ComputationalIntelligence {
     node [shape=box];
     rankdir=LR;
 
-    // Completed modules
-    {node [style=filled];
-    COS111U COS112V COS113W MAT1511 MAT1512 COS101S
-    INF1208 PYC101Y STA1510 MAT103N DSC1510 LIN101W
-    COS211X COS261C COS2144 COS3114}
-
     {rank=same; COS301Y INF320E COS351D COS361F PYC303B}
     {rank=same; node [shape=ellipse];
-    COS3114 APM3711 MAT307Y INF303D LIN3028 COS340A}
+    COS3114 [style=filled]
+    APM3711 MAT307Y INF303D LIN3028 COS340A}
 
-    {rank=same; COS201V COS211X COS261C COS2144}
+    {rank=same;
+    COS201V
+    {node [style=filled]; COS211X COS261C COS2144}}
+
     {rank=same; node [shape=ellipse];
     COS2213 COS2338 MAT212S LIN309F LIN2024 PLS207B}
 
     {rank=same;
         {node [style=filled];
               COS101S COS112V COS113W INF1208 MAT1511 MAT1512
-              PYC101Y COS111U CSS101H STA1510}
-        EUP1501}
+              PYC101Y COS111U STA1510}
+        CSS101H EUP1501}
 
     {rank=same; node [shape=ellipse];
         INF1511 [style=dotted]
