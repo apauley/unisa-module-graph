@@ -16,11 +16,16 @@ digraph ComputationalIntelligence {
     {rank=same; node [shape=ellipse];
     COS2213 COS2338 MAT212S LIN309F LIN2024 PLS207B}
 
-    {rank=same; COS101S COS112V COS113W INF1208 MAT1511 MAT1512
-                PYC101Y COS111U CSS101H STA1510 EUP1501}
+    {rank=same;
+        {node [style=filled];
+              COS101S COS112V COS113W INF1208 MAT1511 MAT1512
+              PYC101Y COS111U CSS101H STA1510}
+        EUP1501}
 
     {rank=same; node [shape=ellipse];
-    INF1511 MAT103N DSC1510 LIN101W}
+        INF1511 [style=dotted]
+        {node [style=filled];
+              MAT103N DSC1510 LIN101W}}
 
     COS301Y -> {COS201V}
     INF320E -> {INF1208 INF1511}
