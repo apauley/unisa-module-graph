@@ -42,6 +42,27 @@ digraph ComputationalIntelligence {
                 MAT103N DSC1510 LIN101W}}
     }
 
+
+    subgraph cluster0 {
+        rankdir=LR;
+        label = "Legend";
+
+        Module1 [label=""];
+        Module2 [label=""];
+        Module3 [label=""];
+        Module4 [label=""];
+        Module2 -> Module1 [label="Requirement"]
+        Module4 -> Module3 [label="Suggestion", style=dashed]
+
+        Required;
+        Completed [style=filled];
+        Optional [shape=ellipse];
+        Skipped [label="Optional, left out",shape=ellipse,style=dotted];
+        Required -> Optional [color=white];
+        Completed -> Skipped [color=white];
+    }
+
+
     COS301Y -> {COS201V}
     INF320E -> {INF1208 INF1511}
     COS351D -> {COS211X COS261C}
