@@ -21,7 +21,9 @@ digraph ComputationalIntelligence {
     {node [style=filled]; COS211X COS261C COS2144}}
 
     {rank=same; node [shape=ellipse];
-    COS2213 COS2338 MAT212S PLS207B
+    COS2338 PLS207B
+    MAT212S [style=filled]
+    COS2213 [style=filled]
     LIN309F [style=dotted]
     LIN2024 [style=dotted]}
 
@@ -33,8 +35,8 @@ digraph ComputationalIntelligence {
         {rank=same;
         {node [style=filled];
               COS101S COS112V COS113W INF1208 MAT1511 MAT1512
-              PYC101Y COS111U STA1510}
-        CSS101H EUP1501}
+              PYC101Y COS111U STA1510 CSS101H}
+        EUP1501}
 
         {rank=same; node [shape=ellipse];
             INF1511 [style=dotted]
