@@ -39,7 +39,6 @@ digraph ComputationalIntelligence {
         EUP1501}
 
         {rank=same; node [shape=ellipse];
-            INF1511 [style=dotted]
             {node [style=filled];
                 MAT103N DSC1510 LIN101W}}
     }
@@ -66,7 +65,7 @@ digraph ComputationalIntelligence {
 
 
     COS301Y -> {COS201V}
-    INF320E -> {INF1208 INF1511}
+    INF320E -> {INF1208}
     COS351D -> {COS211X COS261C}
     COS361F -> {COS261C}
     PYC303B -> {PYC101Y}
