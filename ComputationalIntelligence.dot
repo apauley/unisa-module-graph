@@ -58,9 +58,8 @@ digraph ComputationalIntelligence {
         Required;
         Completed [style=filled];
         Optional [shape=ellipse];
-        Skipped [label="Optional, left out",shape=ellipse,style=dotted];
         Required -> Optional [color=white];
-        Completed -> Skipped [color=white];
+        Optional -> Completed [color=white];
     }
 
 
