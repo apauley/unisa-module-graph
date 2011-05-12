@@ -6,7 +6,7 @@ digraph ComputationalIntelligence {
         label = "Third-level modules";
 
         {rank=same;
-        COS301Y INF320E COS351D COS361F PYC303B}
+        COS3701 INF3720 COS351D COS361F PYC303B}
 
         {rank=same; node [shape=ellipse];
         COS3114 [style=filled]
@@ -19,7 +19,7 @@ digraph ComputationalIntelligence {
     COS201V COS211X COS261C COS2144}
 
     {rank=same; node [style=filled]; node [shape=ellipse];
-    PLS207B MAT212S COS2213 LIN309F}
+    PLS207B MAT212S COS2213 LIN3705}
 
     MAT103OR151 [label="Requires\none of...", style=dashed];
 
@@ -57,8 +57,8 @@ digraph ComputationalIntelligence {
     }
 
 
-    COS301Y -> {COS201V}
-    INF320E -> {INF1208}
+    COS3701 -> {COS201V}
+    INF3720 -> {INF1208}
     COS351D -> {COS211X COS261C}
     COS361F -> {COS261C}
     PYC303B -> {PYC101Y}
@@ -80,6 +80,6 @@ digraph ComputationalIntelligence {
     COS2213 -> {COS211X}
     MAT212S -> {MAT103OR151}
     MAT103OR151 -> {MAT103N MAT1511}
-    LIN309F -> {LIN101W} [style=dashed]
+    LIN3705 -> {LIN101W} [style=dashed]
     PLS207B -> {PYC101Y}
 }
