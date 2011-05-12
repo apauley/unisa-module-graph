@@ -15,15 +15,11 @@ digraph ComputationalIntelligence {
         LIN3028}
     }
 
-    {rank=same;
-    COS201V [style=filled]
-    {node [style=filled]; COS211X COS261C COS2144}}
+    {rank=same; node [style=filled];
+    COS201V COS211X COS261C COS2144}
 
-    {rank=same; node [shape=ellipse];
-    PLS207B [style=filled]
-    MAT212S [style=filled]
-    COS2213 [style=filled]
-    LIN309F [style=filled]}
+    {rank=same; node [style=filled]; node [shape=ellipse];
+    PLS207B MAT212S COS2213 LIN309F}
 
     MAT103OR151 [label="Requires\none of...", style=dashed];
 
