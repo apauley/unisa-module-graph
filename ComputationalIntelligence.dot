@@ -16,14 +16,14 @@ digraph ComputationalIntelligence {
     }
 
     {rank=same;
-    COS201V
+    COS201V [style=filled]
     {node [style=filled]; COS211X COS261C COS2144}}
 
     {rank=same; node [shape=ellipse];
-    PLS207B
+    PLS207B [style=filled]
     MAT212S [style=filled]
     COS2213 [style=filled]
-    LIN309F}
+    LIN309F [style=filled]}
 
     MAT103OR151 [label="Requires\none of...", style=dashed];
 
