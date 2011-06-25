@@ -8,7 +8,7 @@ digraph ComputationalIntelligence {
         {rank=same;
         COS3701 [style=filled]
         INF3720 [style=filled]
-        COS351D
+        COS3751
         COS361F
         PYC303B}
 
@@ -63,7 +63,7 @@ digraph ComputationalIntelligence {
 
     COS3701 -> {COS201V}
     INF3720 -> {INF1208}
-    COS351D -> {COS211X COS261C}
+    COS3751 -> {COS211X COS261C}
     COS361F -> {COS261C}
     PYC303B -> {PYC101Y}
 
