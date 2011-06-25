@@ -6,7 +6,11 @@ digraph ComputationalIntelligence {
         label = "Third-level modules";
 
         {rank=same;
-        COS3701 INF3720 COS351D COS361F PYC303B}
+        COS3701 [style=filled]
+        INF3720 [style=filled]
+        COS351D
+        COS361F
+        PYC303B}
 
         {rank=same; node [shape=ellipse];
         COS3114 [style=filled]
