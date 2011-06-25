@@ -15,7 +15,7 @@ digraph ComputationalIntelligence {
         {rank=same; node [shape=ellipse];
         COS3114 [style=filled]
         MAT3707 COS3712
-        INF303D}
+        INF3703}
     }
 
     {rank=same; node [style=filled];
@@ -68,7 +68,7 @@ digraph ComputationalIntelligence {
 
     COS3114 -> {COS211X COS2144}
     MAT3707 -> {MAT212S COS201V} [style=dashed]
-    INF303D -> {COS211X}
+    INF3703 -> {COS211X}
     COS3712 -> {COS211X MAT103N}
 
 
